@@ -47,10 +47,8 @@
   ],
   "nodes": [
     {
-      "toolbox": "Nipype",
       "name": "conv2_d",
       "class": "Conv2D",
-      "category": "convolutional",
       "ports": [
         {
           "base": "",
@@ -428,10 +426,8 @@
       "colour": "#93aa42"
     },
     {
-      "toolbox": "Nipype",
       "name": "max_pooling2_d",
       "class": "MaxPooling2D",
-      "category": "pooling",
       "ports": [
         {
           "base": "",
@@ -567,10 +563,8 @@
       "colour": "#a59941"
     },
     {
-      "toolbox": "Nipype",
       "name": "conv2_d_1",
       "class": "Conv2D",
-      "category": "convolutional",
       "ports": [
         {
           "base": "",
@@ -948,10 +942,8 @@
       "colour": "#93aa42"
     },
     {
-      "toolbox": "Nipype",
       "name": "conv2_d_2",
       "class": "Conv2D",
-      "category": "convolutional",
       "ports": [
         {
           "base": "",
@@ -1329,10 +1321,8 @@
       "colour": "#93aa42"
     },
     {
-      "toolbox": "Nipype",
       "name": "conv2_d_3",
       "class": "Conv2D",
-      "category": "convolutional",
       "ports": [
         {
           "base": "",
@@ -1710,10 +1700,8 @@
       "colour": "#93aa42"
     },
     {
-      "toolbox": "Nipype",
       "name": "max_pooling2_d_1",
       "class": "MaxPooling2D",
-      "category": "pooling",
       "ports": [
         {
           "base": "",
@@ -1849,10 +1837,8 @@
       "colour": "#a59941"
     },
     {
-      "toolbox": "Nipype",
       "name": "max_pooling2_d_2",
       "class": "MaxPooling2D",
-      "category": "pooling",
       "ports": [
         {
           "base": "",
@@ -1988,10 +1974,8 @@
       "colour": "#a59941"
     },
     {
-      "toolbox": "Nipype",
       "name": "max_pooling2_d_3",
       "class": "MaxPooling2D",
-      "category": "pooling",
       "ports": [
         {
           "base": "",
@@ -2127,10 +2111,8 @@
       "colour": "#a59941"
     },
     {
-      "toolbox": "Nipype",
       "name": "global_average_pooling2_d",
       "class": "GlobalAveragePooling2D",
-      "category": "pooling",
       "ports": [
         {
           "base": "",
@@ -2200,10 +2182,8 @@
       "colour": "#a59941"
     },
     {
-      "toolbox": "Nipype",
       "name": "dense",
       "class": "Dense",
-      "category": "core",
       "ports": [
         {
           "base": "",
@@ -2471,10 +2451,8 @@
       "colour": "#80b649"
     },
     {
-      "toolbox": "Nipype",
       "name": "batch_normalization",
       "class": "BatchNormalization",
-      "category": "normalization",
       "ports": [
         {
           "base": "",
@@ -2808,10 +2786,8 @@
       "colour": "#bb5172"
     },
     {
-      "toolbox": "Nipype",
       "name": "dense_1",
       "class": "Dense",
-      "category": "core",
       "ports": [
         {
           "base": "",
