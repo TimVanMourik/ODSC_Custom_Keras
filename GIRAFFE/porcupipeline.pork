@@ -83,7 +83,7 @@
           "name": "filters",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "16",
           "visible": true,
           "iterator": false
         },
@@ -105,7 +105,7 @@
           "name": "kernel_size",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "(3,3)",
           "visible": true,
           "iterator": false
         },
@@ -149,7 +149,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -215,7 +215,7 @@
           "name": "activation",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "'relu'",
           "visible": false,
           "iterator": false
         },
@@ -507,7 +507,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -601,7 +601,7 @@
           "name": "filters",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "32",
           "visible": true,
           "iterator": false
         },
@@ -623,7 +623,7 @@
           "name": "kernel_size",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "(3,3)",
           "visible": true,
           "iterator": false
         },
@@ -667,7 +667,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -981,7 +981,7 @@
           "name": "filters",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "64",
           "visible": true,
           "iterator": false
         },
@@ -1003,7 +1003,7 @@
           "name": "kernel_size",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "(3,3)",
           "visible": true,
           "iterator": false
         },
@@ -1047,7 +1047,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -1361,7 +1361,7 @@
           "name": "filters",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "128",
           "visible": true,
           "iterator": false
         },
@@ -1383,7 +1383,7 @@
           "name": "kernel_size",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "(3,3)",
           "visible": true,
           "iterator": false
         },
@@ -1427,7 +1427,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -1785,7 +1785,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -1923,7 +1923,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -1966,7 +1966,7 @@
       ],
       "position": [
         978.8068237304688,
-        738.7193908691406
+        737.3758850097656
       ],
       "code": [
         {
@@ -2061,7 +2061,7 @@
           "name": "padding",
           "output": false,
           "outputPort": false,
-          "value": "'valid'",
+          "value": "'same'",
           "visible": false,
           "iterator": false
         },
@@ -2104,7 +2104,7 @@
       ],
       "position": [
         1360.0687866210938,
-        884.3741760253906
+        882.5816345214844
       ],
       "code": [
         {
@@ -2227,7 +2227,7 @@
           "name": "units",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "64",
           "visible": true,
           "iterator": false
         },
@@ -2249,7 +2249,7 @@
           "name": "activation",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "'relu'",
           "visible": false,
           "iterator": false
         },
@@ -2833,7 +2833,7 @@
           "name": "units",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "2",
           "visible": true,
           "iterator": false
         },
@@ -2855,7 +2855,7 @@
           "name": "activation",
           "output": false,
           "outputPort": false,
-          "value": "",
+          "value": "'sigmoid'",
           "visible": false,
           "iterator": false
         },
@@ -3052,7 +3052,7 @@
       ],
       "position": [
         2394.6260908290787,
-        1061.3188722713717
+        1059.5263918026217
       ],
       "code": [
         {

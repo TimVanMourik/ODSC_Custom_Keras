@@ -16,11 +16,12 @@ def NeuralNet(shape):
     model = Sequential()
 
     model.add(Conv2D(
-      #mandatory argument,  # kernel_size
-      #mandatory argument,  # filters,
+      (3,3),  # kernel_size
+      16,  # filters,
       strides=(1, 1),
-      padding='valid',
+      padding='same',
       dilation_rate=(1, 1),
+      activation='relu',
       use_bias=True,
       kernel_initializer='glorot_uniform',
       bias_initializer='zeros'
@@ -28,14 +29,14 @@ def NeuralNet(shape):
 
     model.add(MaxPooling2D(
       pool_size=(2, 2),
-      padding='valid'
+      padding='same'
     ))
 
     model.add(Conv2D(
-      #mandatory argument,  # kernel_size
-      #mandatory argument,  # filters,
+      (3,3),  # kernel_size
+      32,  # filters,
       strides=(1, 1),
-      padding='valid',
+      padding='same',
       dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
@@ -44,14 +45,14 @@ def NeuralNet(shape):
 
     model.add(MaxPooling2D(
       pool_size=(2, 2),
-      padding='valid'
+      padding='same'
     ))
 
     model.add(Conv2D(
-      #mandatory argument,  # kernel_size
-      #mandatory argument,  # filters,
+      (3,3),  # kernel_size
+      64,  # filters,
       strides=(1, 1),
-      padding='valid',
+      padding='same',
       dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
@@ -60,14 +61,14 @@ def NeuralNet(shape):
 
     model.add(MaxPooling2D(
       pool_size=(2, 2),
-      padding='valid'
+      padding='same'
     ))
 
     model.add(Conv2D(
-      #mandatory argument,  # kernel_size
-      #mandatory argument,  # filters,
+      (3,3),  # kernel_size
+      128,  # filters,
       strides=(1, 1),
-      padding='valid',
+      padding='same',
       dilation_rate=(1, 1),
       use_bias=True,
       kernel_initializer='glorot_uniform',
@@ -76,7 +77,7 @@ def NeuralNet(shape):
 
     model.add(MaxPooling2D(
       pool_size=(2, 2),
-      padding='valid'
+      padding='same'
     ))
 
     model.add(GlobalAveragePooling2D(
@@ -84,7 +85,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Dense(
-      #mandatory argument,  # units,
+      64,  # units,
+      activation='relu',
       use_bias=True,
       kernel_initializer='glorot_uniform',
       bias_initializer='zeros'
@@ -103,7 +105,8 @@ def NeuralNet(shape):
     ))
 
     model.add(Dense(
-      #mandatory argument,  # units,
+      2,  # units,
+      activation='sigmoid',
       use_bias=True,
       kernel_initializer='glorot_uniform',
       bias_initializer='zeros'
