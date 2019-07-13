@@ -5,36 +5,10 @@ Created on Mon Apr 22 14:31:54 2019
 @author: w10007346
 """
 
-from keras.layers import Dense, Conv2D, MaxPooling2D, BatchNormalization, GlobalAveragePooling2D
+from GIRAFFE.code.neural_net import NeuralNet
 
-from keras import models
-
-# starting point 
-my_model= models.Sequential()
-
-# Add first convolutional block
-my_model.add(Conv2D(16, (3, 3), activation='relu', padding='same', 
-                    input_shape=(178,218,3)))
-my_model.add(MaxPooling2D((2, 2), padding='same'))
-
-# second block
-my_model.add(Conv2D(32, (3, 3), activation='relu', padding='same'))
-my_model.add(MaxPooling2D((2, 2), padding='same'))
-# third block
-my_model.add(Conv2D(64, (3, 3), activation='relu', padding='same'))
-my_model.add(MaxPooling2D((2, 2), padding='same'))
-# fourth block
-my_model.add(Conv2D(128, (3, 3), activation='relu', padding='same'))
-my_model.add(MaxPooling2D((2, 2), padding='same'))
-
-# global average pooling
-my_model.add(GlobalAveragePooling2D())
-# fully connected layer
-my_model.add(Dense(64, activation='relu'))
-my_model.add(BatchNormalization())
-# make predictions
-my_model.add(Dense(2, activation='sigmoid'))
-
+input_shape=(178,218,3)
+my_model = NeuralNet(input_shape)
 
 # Show a summary of the model. Check the number of trainable parameters
 my_model.summary()
