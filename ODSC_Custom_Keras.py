@@ -7,7 +7,7 @@ Created on Mon Apr 22 14:31:54 2019
 
 from GIRAFFE.code.neural_net import NeuralNet
 
-input_shape=(178,218,3)
+input_shape = (178,218,3)
 my_model = NeuralNet(input_shape)
 
 # Show a summary of the model. Check the number of trainable parameters
@@ -36,15 +36,15 @@ data_generator = ImageDataGenerator(preprocessing_function=preprocess_input)
 
 # get batches of training images from the directory
 train_generator = data_generator.flow_from_directory(
-        'yourdirectory/train',
-        target_size=(178, 218),
+        'data/train',
+        target_size=input_shape,
         batch_size=12,
         class_mode='categorical')
 
 # get batches of validation images from the directory
 validation_generator = data_generator.flow_from_directory(
-        'yourdirectory/valid',
-        target_size=(178, 218),
+        'data/valid',
+        target_size=input_shape,
         batch_size=12,
         class_mode='categorical')
 
@@ -80,7 +80,7 @@ saved_model = load_model('Custom_Keras_CNN.h5')
 # generate data for test set of images
 test_generator = data_generator.flow_from_directory(
         'C:/Users/w10007346/Pictures/Celeb_sets/test',
-        target_size=(178, 218),
+        target_size=input_shape,
         batch_size=1,
         class_mode='categorical',
         shuffle=False)
@@ -112,14 +112,4 @@ match.count(True)/1000
 
 
     
-
-
-
-
-
-
-
-
-
-
 
